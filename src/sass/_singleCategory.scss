@@ -1,0 +1,115 @@
+.main__wrap-single {
+    padding: 40px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+.main__single-item {
+    display: flex;
+    margin-top: 35px;
+}
+.main__single-foto {
+    position: relative;
+    width: 250px;
+    height: 150px;
+}
+.main__single-img {
+    width: 100%;
+    border: 1px solid #000;
+    box-shadow: 0 1px 1px 1px #000;
+}
+.main__single-img span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 5vw;
+    background-color: #557c3e;
+    opacity: 0.8;
+    padding: 5px;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+}
+.main__single-price {
+    margin-top: 15px;
+    text-align: right;
+    font-size: 1.1em;
+}
+.main__single-descr {
+    margin-left: 20px;
+}
+.main__single-subtitle {
+    font-size: 1.3em;
+    padding-right: 30px;
+    margin-bottom: 15px;
+}
+.main__single-p {
+    font-style: italic;
+    font-size: 0.9em;
+}
+.main__single-hr {
+    width: 70%;
+    height: 2px;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-top: 15px;
+    display: none;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .main__wrap-single {
+        grid-template-columns: 1fr;
+    }
+    .text__center {
+        width: 90vw;
+        margin: 0 auto;
+    }
+    .main__single-item {
+        width: 70vw;
+        margin: 15px auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .text__center {
+        width: 90vw;
+        margin: 0 auto;
+    }
+    .main__wrap-single {
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+    .main__single-item {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main__single-price {
+        margin-top: 10px;
+        text-align: right;
+        font-size: 1em;
+        text-align: center;
+    }
+    .main__single-descr {
+        width: 80vw;
+        margin-left: 0;
+        margin-top: 35px;
+        text-align: center;
+    }
+    .main__single-hr {
+        display: block;
+    }
+}
+
+@media (max-width: 678px) {
+    .text__center {
+        width: 90vw;
+        margin: 0 auto;
+    }
+    .main__single-img span {
+        width: 15vw;
+    }
+}
