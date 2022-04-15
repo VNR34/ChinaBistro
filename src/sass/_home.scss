@@ -1,0 +1,27 @@
+.home__bg {
+    background: url(../img/jumbotron_1200.jpg) no-repeat;
+    height: 675px;
+    border: 2px solid #3f0c1f;
+    box-shadow: 0 0 50px #3f0c1f;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .home__bg {
+        background: url(../img/jumbotron_992.jpg) center no-repeat;
+        height: 558px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .home__bg {
+        background: url(../img/jumbotron_768.jpg) center no-repeat;
+        height: 432px;
+    }
+}
+
+@media (max-width: 767px) {
+    .home__bg {
+        background: url(../img/jumbotron_480.jpg) center no-repeat;
+        height: 270px;
+    }
+}
